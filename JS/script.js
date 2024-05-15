@@ -28,25 +28,25 @@ $(document).ready(function() {
         });
     });
 
-const obtenerData = (categoria) =>{
-    fetch(`https://api.chucknorris.io/jokes/random?category=${categoria}`)
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data);
-                    // Configura el contenido del pop-up
-                    tituloPopUp.innerHTML = "<strong>Category:</strong> " + categoria.toUpperCase();
-                    textoValor.innerHTML = `<p class="joke">"${data.value}"</p> `;
-                    textoCreado.innerHTML = "<strong>Created at:</strong> " + data.created_at.substr(0,19);
-                    textoActualizado.innerHTML = "<strong>Updated at:</strong> " + data.updated_at.substr(0,19); // Agregar el valor al Pop-Up
-                    textoURL.innerHTML = `<a href=${data.url} target="_blank">See more...</a> `;
-                    
-                    // Muestra el pop-up
-                    popUp.style.display = "block";
-                    overlay.style.display = "block";
-                })
-                .catch(error => console.log(error));
-    textoValor.innerHTML = '<p class="text-center">...</p>'
-}
+    const obtenerData = (categoria) =>{
+        fetch(`https://api.chucknorris.io/jokes/random?category=${categoria}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data);
+                        // Configura el contenido del pop-up
+                        tituloPopUp.innerHTML = "<strong>Category:</strong> " + categoria.toUpperCase();
+                        textoValor.innerHTML = `<p class="joke">"${data.value}"</p> `;
+                        textoCreado.innerHTML = "<strong>Created at:</strong> " + data.created_at.substr(0,19);
+                        textoActualizado.innerHTML = "<strong>Updated at:</strong> " + data.updated_at.substr(0,19); // Agregar el valor al Pop-Up
+                        textoURL.innerHTML = `<a href=${data.url} target="_blank">See more...</a> `;
+                        
+                        // Muestra el pop-up
+                        popUp.style.display = "block";
+                        overlay.style.display = "block";
+                    })
+                    .catch(error => console.log(error));
+        textoValor.innerHTML = '<p class="text-center">...</p>'
+    }
 
     cerrarPopUp.addEventListener('click', function() {
         // Oculta el pop-up al hacer clic en el botón de cerrar
