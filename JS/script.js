@@ -5,7 +5,6 @@ $(document).ready(function() {
     var popUp = document.getElementById("popUp");
     var overlay = document.getElementById("overlay");
     var tituloPopUp = document.getElementById("tituloPopUp");
-    var textoPopUp = document.getElementById("textoPopUp");
     var cerrarPopUp = document.getElementById("cerrarPopUp");
 
     var textoID= document.getElementById("textoID");
