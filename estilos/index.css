@@ -1,0 +1,151 @@
+body{
+    background-color: rgb(202, 200, 200);
+    font-family: Arial, sans-serif;
+}
+
+.titleAPI{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #000000;
+}
+
+.imageAPI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageAPI img{
+    width: 20%;
+    height: 20%;
+    border-radius: 10px;
+}
+
+.centrarTexto{
+    text-align: center;
+    grid-column: 1/ span 3;
+}
+
+/* Estilo del pop-up */
+#popUp {
+    display: none;
+    position: fixed;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    z-index: 1000;
+}
+
+#popUp #cerrarPopUp{
+    position: absolute;
+    color: white;
+    border: 0px none transparent;
+    background-color: transparent;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#popUp #cerrarPopUp:hover{
+    color: rgb(142, 142, 142);
+    /*Añadir una sombra abajo del boton*/
+    animation: subir 0.3s ease forwards; /* Animación de subir */
+    filter: brightness(110%); /* Ajustamos el brillo del botón para simular la luminosidad */
+}
+
+/* Fondo oscuro para resaltar el pop-up */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 900;
+}
+
+.boton {
+    border-radius: 8px;
+    border: 2px solid rgb(125, 125, 125);
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #989898;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.boton:hover{
+    background-color: #888888;
+    /*Añadir una sombra abajo del boton*/
+    box-shadow: 0px 5px 5px rgba(221, 221, 221, 0.9);
+    animation: subir 0.3s ease forwards; /* Animación de subir */
+    filter: brightness(110%); /* Ajustamos el brillo del botón para simular la luminosidad */
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+.seccion-1{
+    border-color: black;
+    background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 3px solid; /*Ponerle un borde negro a esta seccion*/
+    box-shadow: 0 0 70px rgba(0,0,0,.9);
+    border-radius: 8px;
+    margin: 12px;
+}
+
+@keyframes subir {
+    from {
+        transform: translateY(0); /* Empieza en la posición original */
+    }
+    to {
+        transform: translateY(-5px); /* Termina 3 unidades arriba */
+    }
+}
+
+/*Adaptabilidad*/
+@media (max-width: 800px) {
+    .cuerpo{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZyrq1e6u0syGAMiNGkeXgyvlkC6Qvo1SKHORTg4fxyAAPeHzlLUxNIBeId6J7H0lrR14&usqp=CAU");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .contenedor1{
+        display: block;
+    }
+    #popUp {
+        width: 90%;
+        background: #000000;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border-radius: 20px;
+    }
+    #popup #cerrar{
+        display: inline;
+    }
+    #popup #quitar{
+        display: none;
+    }
+}
