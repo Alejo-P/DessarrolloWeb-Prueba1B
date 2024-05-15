@@ -22,8 +22,6 @@ $(document).ready(function() {
             // Obtiene la categoría del texto del botón
             var categoria = boton.textContent.trim();
             
-            // // Redirecciona a la página "/pags/request.html" con la categoría como parámetro en la URL
-            // window.location.href = "./pags/request.html?categoria=" + encodeURIComponent(categoria);
             // Si se proporciona una categoría, hace la solicitud a la API
             if (categoria) {
                 fetch(`https://api.chucknorris.io/jokes/random?category=${categoria}`)
