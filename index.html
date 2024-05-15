@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1 class="text-center">
-        Prueba-PartePractica Comsumo de una API
+        Prueba-PartePractica Consumo de una API
     </h1>
 
     <h2 class="text-center titleAPI">
@@ -23,78 +23,84 @@
     </div>
 
     <section class="card-body seccion-1 jello-horizontal">
+        <a href="searchJokes.html" class="searchBtn">Search for some joke</a>
+    </section>
+    <div class="centrarTexto">
+        <h3>or</h3>
+    </div>
+    <section class="card-body seccion-1 jello-horizontal">
         <div class="container">
             <div class="row text-center">
-                <h3 class="titulo-1">Selecciona una categoría</h3>
+                <h3 class="titulo-1">Choose a category:</h3>
             </div>
             <div class="row">
                 <button class="boton col m-1">
-                    animal
+                    Animal
                 </button>
             
                 <button class="boton col m-1">
-                    career
+                    Career
                 </button>
             
                 <button class="boton col m-1">
-                    celebrity
-                </button>
-            </div>
-            <div class="row">
-                <button class="boton col m-1">
-                    dev
-                </button>
-            
-                <button class="boton col m-1">
-                    explicit
-                </button>
-            
-                <button class="boton col m-1">
-                    fashion
+                    Celebrity
                 </button>
             </div>
             <div class="row">
                 <button class="boton col m-1">
-                    food
+                    Dev
                 </button>
             
                 <button class="boton col m-1">
-                    history
+                    Explicit
                 </button>
             
                 <button class="boton col m-1">
-                    money
+                    Fashion
                 </button>
             </div>
             <div class="row">
                 <button class="boton col m-1">
-                    movie
+                    Food
                 </button>
             
                 <button class="boton col m-1">
-                    music
+                    History
                 </button>
             
                 <button class="boton col m-1">
-                    political
+                    Money
                 </button>
             </div>
             <div class="row">
                 <button class="boton col m-1">
-                    religion
+                    Movie
                 </button>
             
                 <button class="boton col m-1">
-                    science
+                    Music
                 </button>
             
                 <button class="boton col m-1">
-                    sport
+                    Political
+                </button>
+            </div>
+            <div class="row">
+                <button class="boton col m-1">
+                    Religion
+                </button>
+            
+                <button class="boton col m-1">
+                    Science
+                </button>
+            
+                <button class="boton col m-1">
+                    Sport
                 </button>
             </div>
             <div class="row text-center">
                 <button class="boton m-1">
-                    travel
+                    Travel
                 </button>
             </div>
         </div>
@@ -103,14 +109,12 @@
     <!-- Ventana del Pop Up-->
     <div class="card border-dark mb-3" style="max-width: 540px;" id="popUp">
         <h3 id="tituloPopUp">Titulo</h3>
-        <p>Elementos de la consulta</p>
         <hr>
-        <p id="textoID"></p>
-        <p id="textoURL"></p>
-        <p id="textoImagen"></p>
         <p id="textoValor"></p>
         <p id="textoFC"></p>
         <p id="textoFA"></p>
+        <p id="textoURL"></p>
+        <button id="randomBtn" >Random Joke</button>
         <button id="cerrarPopUp">X</button>
     </div>
 

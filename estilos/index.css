@@ -26,6 +26,22 @@ body{
     text-align: center;
     grid-column: 1/ span 3;
 }
+.searchBtn{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(96, 154, 205);
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid black;
+    color: white;
+    text-decoration: none;
+    transition: animation, box-shadow .3s;
+}
+.searchBtn:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(77, 121, 159);
+}
 
 /* Estilo del pop-up */
 #popUp {
@@ -78,7 +94,26 @@ body{
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 900;
 }
-
+#textoValor{
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    line-height: 30px;
+    aspect-ratio: 3;
+}
+#textoFC, #textoFA{
+    font-size: 10px;
+    margin: 0;
+}
+#randomBtn{
+    padding: 5px;
+    border-radius: 10px;
+}
+#randomBtn:hover{
+    cursor: pointer;
+    background-color: #888888;
+}
 .boton {
     border-radius: 8px;
     border: 2px solid rgb(125, 125, 125);
@@ -88,11 +123,9 @@ body{
     font-family: inherit;
     background-color: #989898;
     cursor: pointer;
-    transition: border-color 0.25s;
+    transition: border-color 0.25s animation;
 }
-
-.boton:hover{
-    background-color: #888888;
+.boton:hover, .searchBtn:hover{
     /*Añadir una sombra abajo del boton*/
     box-shadow: 0px 5px 5px rgba(221, 221, 221, 0.9);
     animation: subir 0.3s ease forwards; /* Animación de subir */

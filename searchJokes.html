@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck Norris</title>
+    <link rel="stylesheet" href="/estilos/styleSearch.css">
+</head>
+<body>
+    <a class="backBtn" href="index.html">&#8617;</a>
+    <div class="cajabuscar">
+        <p id="results"></p>
+        <form method="get" id="buscarform">
+            <fieldset>
+                <input type="text" id="searchInput" value="" placeholder="Search"  />
+            </fieldset>
+        </form>
+    </div>
+    <img src="imgs/chuchNorrisImg.png" alt="Chuck Norris">
+    <div id="items" class="items">
+        Search for something...
+    </div>
+    <div class="buttonSlides">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+</body>
+<script src="JS/searchScript.js"></script>
+</html>
