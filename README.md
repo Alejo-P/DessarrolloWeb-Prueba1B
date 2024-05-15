@@ -1,6 +1,6 @@
 <h2>
   <i>
-    Consulmo de API para generacion de texto y bromas de Chuck norris
+    Consumo de API para generacion de texto y bromas de Chuck norris
   </i>
 </h2>
 
